@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="yourname">
+    <title>Student Registration Form</title>
+</head>
+<body onload="currentDate()">
+    <script src="validations.js"></script>
+        <div class="row">
+                <div class="col100">
+                    <div id="currentDate"></div><br>
+                    <div class="clock">
+                        <span id="hh"></span>:
+                        <span id="mm"></span>:
+                        <span id="ss"></span>
+                    </div>
+                </div>
+            </div>
+            
+    <form method="POST" name="regForm" action="#" enctype="multipart/form-data" onsubmit="return validations()">
+        <fieldset>
+            <legend>Registration</legend>
+            <table border=0 cellpadding=10 cellspacing=10 >
+                <tr>
+                    <td>Full Name</td>
+                    <td>
+                        <input type="text" name="fullname" placeholder="First Middle Last"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" name="email" placeholder="you@domain.com" />
+                     </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="M" checked />Male
+                        <input type="radio" name="gender" value="F"/>Female
+                        <input type="radio" name="gender" value="O" />Others
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <select name="city" size=1>
+                            <optgroup label="State 2">
+                                <option value="jan">Janakpur</option>
+                                <option value="bir">Birjung</option>
+                                <option value="bar">Bardibas</option>
+                            </optgroup>
+                        <optgroup label="State 3">
+                            <option value="ktm" selected>Kathmandu</option>
+                            <option value="lpt">Lalitpur</option>
+                            <option value="bkt">Bhaktapur</option>
+                            <option value="htd">Hetauda</option>
+                        </optgroup>
+                        <optgroup label="State 4">
+                            <option value="pkr">Pokhara</option>
+                            <option value="bni">Beni</option>
+                            <option value="dum">Dumre</option>
+                        </optgroup>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DOB</td>
+                    <td>
+                        <input type="date" name="dob" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td>
+                        <input type="checkbox" name="php" value="php" checked />PHP
+                        <input type="checkbox" name="java" value="java" />Java
+                        <input type="checkbox" name="asp" value="asp"/>ASP
+                    </td>
+                </tr>
+                <tr>
+                    <td>Photo</td>
+                    <td>
+                        <input type="file" name="upload" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td>
+                        <textarea rows=5 cols=40 name="message" >
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="iagree" />I agree, all the informations filled by me is correct.
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="submit" value="Register" />
+                        <input type="reset" name="reset" value="Cancel" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
