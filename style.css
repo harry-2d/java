@@ -1,0 +1,202 @@
+/*universal selector*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+#row{
+    width: 100%;
+}
+
+.col0{
+    width: 100%;
+    background-color: #e6d222;
+    text-align: center;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid #fffccc;
+    
+}
+
+ul{
+    list-style-type:none ;
+    overflow: hidden;
+    background-color:rgb(255, 255, 255); 
+  
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 12px;
+
+}
+
+li a:hover
+{
+    color:#ffffff;
+    background-color:red;
+    border-top: 2px solid black;
+
+}
+
+.col100{
+    width: 100%;
+    min-height: 150px;
+    padding: 5px;
+    border: 1px solid #fffccc;
+    
+
+}
+.clear{
+    clear: both;
+}
+
+.col33{
+    width:32%;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid #fffccc;
+    
+    float: left;
+}
+
+
+.col25{
+    width:25%;
+    height: 350px;
+    padding: 5px;
+    border: 1px solid #201f05;
+    
+
+}
+
+
+.col100{
+    width:100%;
+    height: 350px;
+    padding: 5px;
+    border: 1px solid #201f05;
+    
+
+}
+
+
+ul{
+    list-style-type:none ;
+    overflow: hidden;
+    background-color:rgb(255, 255, 255); 
+  
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 12px;
+
+}
+
+li a:hover
+{
+    color:#ffffff;
+    
+    border-top: 2px solid rgb(10, 97, 119);
+
+}
+
+i{
+    font-size: 50px !important;
+    
+}
+.row{
+    min-height: 20px;
+
+}
+
+#social{
+    position: fixed;
+    top: 30%;
+    right: 0%;
+    width: 50px;
+    min-height: 150px;
+    background-color: #fcfcfc;
+}
+
+.fixed{
+    position: fixed;
+    z-index: 10;
+}
+
+.nonfix{
+    position: absolute;
+    top: 63;
+    z-index: 9;
+}
+
+.mypara{
+      font-family:"Beth Ellen";
+      font-size: 27px;
+      font-weight: 900;
+      color: #201f05;  
+}
+
+.next{
+    font-family:"PT Sans Narrow";
+      font-size: 27px;
+      font-weight: 900;
+      color: #201f05;  
+}
+
+.next1{
+    font-family:"Dancing Script";
+      font-size: 27px;
+      font-weight: 900;
+      color: #201f05;  
+
+}
+#container{
+    width: 1140px;
+    min-height: 1000px;
+
+
+}
+
+@media screen and (max-width:1200px){
+    body{
+        background-color: #0000ff;
+    }
+}
+@media screen and (max-width:480px){
+    body{
+        background-color: #ff0000;
+    }
+    #container{
+        width: 400px;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        background-color: #00ff55;
+    }
+    #container{
+        width: 700px;
+    }
+}
+
+.responsiveimg{
+    width: 100%;
+    height: auto;
+}
+

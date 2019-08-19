@@ -13,11 +13,28 @@
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
         <script src="Script.js"></script>
 </head>
-<body>
+<body onload="currentDate()">
+        <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:150px;height:150px;"src="https://www.clocklink.com/html5embed.php?clock=007&timezone=ACST&color=gray&size=150&Title=&Message=&Target=&From=2019,1,1,0,0,0&Color=gray"></iframe>
+        <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:150px;height:150px;"src="https://www.clocklink.com/html5embed.php?clock=041&timezone=ACST&color=green&size=150&Title=&Message=&Target=&From=2019,1,1,0,0,0&Color=green"></iframe>
 
-    <button onclick="factorial ()">Factorial
+    <div class="row">
+        <div class="col100">
+            <div id="currentDate"></div>
+            <div>
+                <span id="hh"></span>:
+                <span id="mm"></span>:
+                <span id="ss"></span>
+            </div>
+        </div>
+    </div>
+    
+    
+        <button onclick="factorial ()">Factorial
 
     </button>
+    <button onclick="Date ()">torial
+
+        </button>
     <div id="multitable"></div>
     <button onclick="multitable ()">MUltiplication</button>
        <div id="container">
