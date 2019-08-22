@@ -4,19 +4,12 @@
     <meta charset="UTF-8">
     <meta name="author" content="yourname">
     <title>Student Registration Form</title>
+
 </head>
-<body onload="currentDate()">
-    <script src="validations.js"></script>
-        <div class="row">
-                <div class="col100">
-                    <div id="currentDate"></div><br>
-                    <div class="clock">
-                        <span id="hh"></span>:
-                        <span id="mm"></span>:
-                        <span id="ss"></span>
-                    </div>
-                </div>
-            </div>
+<body>
+        <script src="validations.js"></script>
+    <div id="error"></div>
+    
             
     <form method="POST" name="regForm" action="#" enctype="multipart/form-data" onsubmit="return validations()">
         <fieldset>
@@ -31,13 +24,13 @@
                 <tr>
                     <td>Email</td>
                     <td>
-                        <input type="email" name="email" placeholder="you@domain.com" />
+                        <input id="e" type="email" name="email" placeholder="you@domain.com" />
                      </td>
                 </tr>
                 <tr>
                     <td>Password</td>
                     <td>
-                        <input type="password" name="password" />
+                        <input id="p" type="password" name="password" />
                     </td>
                 </tr>
                 <tr>
@@ -114,5 +107,6 @@
             </table>
         </fieldset>
     </form>
+    <script src="validations.js"></script>
 </body>
 </html>
